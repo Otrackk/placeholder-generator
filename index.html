@@ -12,46 +12,93 @@
 </head>
 
 <body>
-
     <!-- HTML SEMANTICO, FOOTER@-->
+    <div class="background">
 
-    <header>
-        <div class="px-4 pt-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="assets/fox.gif" alt="brain gif">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-around align-items-center py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <span class="fs-4 fw-bold">Fox</span>
+                    <img src="./assets/fox-icon.png" alt="">
+                    <span class="fs-4 fw-bold">Holders</span>
+                </a>
 
-            <h1 class="display-5 fw-bold text-body-emphasis">Generate Your Fox</h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
 
-            <div class="col-lg-6 mx-auto">
+                </ul>
+            </header>
+        </div>
 
-                <p class="lead mb-4">Quickly generate your new favourite fox image with more than 122 random foxes to
-                    choose from!</p>
 
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" id="start-now" class="btn btn-primary btn-lg px-4 gap-3">Give me a fox!
-                        🦊</button>
+        <div class="bg">
+            <header>
+                <div class="px-4 pt-0 mt-5 mb-4 text-center">
+                    <img class="d-block mx-auto mb-4 place-img" src="assets/fox.gif" alt="brain gif">
+
+                    <h1 class="display-5 fw-bold text-body-emphasis">Generate Your Placeholder</h1>
+
+                    <div class="col-lg-6 mx-auto">
+
+                        <p class="lead mb-4">Quickly generate your new favourite placeholder from a huge database with
+                            Fox Holders!</p>
+
+                        <form>
+
+                            <div class="form-outline mb-4 d-flex justify-content-center">
+                                <input type="text" id="user-prompt" class="form-control w-25 text-center"
+                                    placeholder="Search your images" />
+                            </div>
+
+                            <button type="button" id="start-now" class="btn btn-primary btn-lg px-4 gap-3">
+                                Generate! 🦊
+                            </button>
+
+                        </form>
+                    </div>
+
                 </div>
-            </div>
+
+                <div id="display-image"
+                    class="container-fluid flex-column align-items-center d-flex justify-content-center mb-5 pb-5">
+                    <div class="container-emoji">
+                        <div class="👉"></div>
+                        <div class="👉"></div>
+                        <div class="👉"></div>
+                        <div class="👉"></div>
+                        <div class="🌴"></div>
+                        <div class="👍"></div>
+                    </div>
+                    <h2 id="here-image">Here are your new placeholders :</h2>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <img class="m-2" id="img-element1" src="" alt="">
+                        <img class="m-2" id="img-element2" src="" alt="">
+                        <img class="m-2" id="img-element3" src="" alt="">
+                    </div>
+                </div>
+            </header>
 
         </div>
 
-        <div id="display-image"
-            class="container-fluid flex-column align-items-center d-flex justify-content-center mb-5 pb-5">
-            <div class="container-emoji">
-                <div class="👉"></div>
-                <div class="👉"></div>
-                <div class="👉"></div>
-                <div class="👉"></div>
-                <div class="🌴"></div>
-                <div class="👍"></div>
-            </div>
-            <h2 id="here-image">Here's your new fox :</h2>
-            <img id="img-element" src="" alt="">
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <img src="./assets/fox-icon.png" alt="">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">&lt;Developed by Matteo Montenero&gt;</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="./index.html">Home</a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="./about.html">About</a></li>
+                </ul>
+            </footer>
         </div>
-    </header>
 
-
-
-
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
