@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- HTML SEMANTICO, FOOTER@-->
+
     <div class="background">
 
         <div class="container">
@@ -22,15 +22,18 @@
                     <img src="./assets/fox-icon.png" alt="">
                     <span class="fs-4 fw-bold">Holders</span>
                 </a>
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
-
-                </ul>
+                    </ul>
+                </nav>
             </header>
         </div>
 
+        <main>
         <div class="bg">
             <header>
                 <div class="px-4 pt-0 mt-5 mb-4 text-center">
@@ -43,7 +46,7 @@
                         <p class="lead mb-4">Quickly generate your new favourite placeholders from a huge database with
                             Fox Holders!</p>
 
-                        <form  onsubmit="return false;">
+                        <form onsubmit="return false;">
 
                             <div class="form-outline mb-4 d-flex justify-content-center">
                                 <input type="text" id="user-prompt" class="form-control w-25 text-center"
@@ -56,7 +59,6 @@
 
                         </form>
                     </div>
-
                 </div>
 
                 <div id="display-image"
@@ -79,9 +81,10 @@
             </header>
 
         </div>
-
+    </main>
 
         <div class="container">
+
             <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
                     <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -95,6 +98,7 @@
                     <li class="ms-3"><a class="text-body-secondary" href="./about.html">About</a></li>
                 </ul>
             </footer>
+            
         </div>
 
     </div>
